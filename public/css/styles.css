@@ -1,0 +1,252 @@
+/* General Styling
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6dd5fa, #2980b9);
+    color: #fff;
+    transition: background 0.3s, color 0.3s ease;
+}
+
+.container {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+} */
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #A7C7E7, #5B8FB9); /* Light blue gradient for light mode */
+    color: #333;  /* Dark text for light mode */
+    transition: background 0.3s, color 0.3s ease;
+}
+
+.container {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.7); /* Light, semi-transparent container for light mode */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(to right, #2c3e50, #34495e);  /* Dark blue gradient for dark mode */
+    color: #fff;  /* White text in dark mode */
+}
+
+body.dark-mode .container {
+    background: rgba(0, 0, 0, 0.7);  /* Dark container background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);  /* Darker shadow */
+}
+
+body.dark-mode header h1, body.dark-mode .filters label, body.dark-mode .weather-display p, body.dark-mode footer {
+    color: #fff;  /* White text for dark mode */
+}
+
+body.dark-mode .search button {
+    background-color: #3498db;
+    color: #fff;
+}
+
+body.dark-mode .search button:hover {
+    background-color: #2980b9;
+}
+
+body.dark-mode .error-message {
+    color: #e74c3c;  /* Red error message for dark mode */
+}
+
+/* Dark Mode Toggle Icon (Sun for dark mode) */
+body.dark-mode #modeIcon {
+    color: #f39c12;  /* Sun icon color in dark mode */
+}
+
+/* Additional styles for Dark Mode when toggled */
+body.dark-mode .hidden {
+    display: none; /* Ensure hidden elements stay hidden */
+}
+
+/* Default Light Mode */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #A7C7E7, #5B8FB9);  /* Light blue background for light mode */
+    color: #333;  /* Dark text for light mode */
+    transition: background 0.3s, color 0.3s ease;
+}
+
+body header h1 {
+    color: #333;  /* Dark text for light mode */
+}
+
+/* Light Mode Button Styles */
+body .search button {
+    background-color: #3498db;
+    color: #fff;
+}
+
+body .search button:hover {
+    background-color: #2980b9;
+}
+
+body .filters label {
+    color: #333;  /* Dark text for light mode */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #fff;
+}
+
+#darkModeToggle {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+#darkModeToggle:hover {
+    color: #3498db;
+}
+
+/* Search Box Styling */
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.search input {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    flex: 1;
+    margin-right: 15px;
+    background-color: #fff;
+    color: #333;
+}
+
+.search button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search button:hover {
+    background-color: #2980b9;
+}
+
+/* Filters Section Styling */
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filters label {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.filters select {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Weather Info Section Styling */
+.weather-display {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.weather-display h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.weather-display p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Error Message Styling */
+/* .error-message {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 20px;
+} */
+
+/* Footer Styling */
+/* footer {
+    margin-top: 30px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+}  */
+
+/* Footer Styles */
+footer {
+    margin-top: 30px;
+    font-size: 1rem;
+    text-align: center;
+    color: #333;  /* Dark text for light mode */
+}
+
+/* Error Message Styles */
+.error-message {
+    color: #e74c3c;  /* Red color for error messages */
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsiveness for Small Screens */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search input {
+        margin-bottom: 15px;
+    }
+
+    .search button {
+        width: 100%;
+    }
+}
